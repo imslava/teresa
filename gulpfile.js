@@ -74,8 +74,7 @@ function buildcopy() {
 // кэширование
 function versionFile(){
 	return src('dist/*.html')
-		.pipe(replace('?v=', '?v=' + randomVersion + ''))
-		.pipe(replace('?v=', '?v=' + randomVersion + ''))
+		.pipe(replace('?v=hash', '?v=' + randomVersion + ''))
 	.pipe(dest('dist'))
 }
 
