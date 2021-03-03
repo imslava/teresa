@@ -29,8 +29,6 @@ function browsersync() {
 function scripts() {
 	return src([
 		'node_modules/jquery/dist/jquery.min.js',
-		'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
-		'node_modules/slick-carousel/slick/slick.min.js',
 		'node_modules/inputmask/dist/jquery.inputmask.min.js',
 		'node_modules/jquery-validation/dist/jquery.validate.min.js',
 		'app/js/common.js',
@@ -73,11 +71,11 @@ function buildcopy() {
 	.pipe(dest('dist'))
 }
 
-// кэширование скриптов
+// кэширование
 function versionFile(){
 	return src('dist/*.html')
-		.pipe(replace('app.min.css', 'app.min.css?v=' + randomVersion + ''))
-		.pipe(replace('app.min.js', 'app.min.js?v=' + randomVersion + ''))
+		.pipe(replace('?v=', '?v=' + randomVersion + ''))
+		.pipe(replace('?v=', '?v=' + randomVersion + ''))
 	.pipe(dest('dist'))
 }
 
