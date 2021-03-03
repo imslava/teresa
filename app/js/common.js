@@ -1,11 +1,5 @@
 $(document).ready(function(){
 
-	$('[data-fancybox]').fancybox({
-		touch: false,
-		autoFocus: false,
-		backFocus: false
-	});
-
 	$(".masked").inputmask({
 		mask: '+7 (999) 999-99-99',
 		showMaskOnHover: false

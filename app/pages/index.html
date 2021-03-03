@@ -7,12 +7,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Title</title>
+    <title>Teresa</title>
     <link rel="stylesheet" href="css/app.min.css?v=hash">
   </head>
 <body>
   
-  @include('components/_header.html')
+  <div class="full-bg" style="background-image: url(img/full-bg.jpg);"></div>
+
+  @include('components/_nav-fixed.html')
+
+  <section class="search">
+    <div class="container-10">
+      <div class="search-title">
+        <h1>Voyance en direct</h1>
+        <h2>sans attente & sans cb</h2>
+      </div>
+      <div class="search-block">
+        <ul class="search-block__nav">
+          <li class="active"><a href="#">Actuellement en audiotel</a></li>
+          <span></span>
+          <li><a href="#">Actuellement en privé</a></li>
+          <span></span>
+          <li><a href="#">Les nouveaux voyants</a></li>
+          <span></span>
+          <li><a href="#">Tous nos voyants</a></li>
+        </ul>
+        <div class="search-block__form">
+          <input type="text" class="search-block__input" placeholder="Recherchez un voyant par ses compétences et trouvez son numéro d'appel (remplissez un ou plusieurs champs)" />
+          <button type="submit" class="search-block__btn"></button>
+        </div>
+        <div class="search-block__type">
+          <label class="search-block__label"><input type="checkbox" checked><span></span>Médium</label>
+          <label class="search-block__label"><input type="checkbox"><span></span>Tarologue</label>
+          <label class="search-block__label"><input type="checkbox"><span></span>Numérologue</label>
+          <label class="search-block__label"><input type="checkbox"><span></span>Astrologue</label>
+        </div>
+      </div>
+      <div class="search-result">
+        <div class="search-item search-item__orange">
+          <div class="search-item__photo" style="background-image: url(img/user/teresa.jpg);"></div>
+          <div class="search-item__info">
+            <div class="search-item__flag" style="background-image: url(img/flag/france.jpg);"></div>
+            <h3>Térésa</h3>
+            <ul class="search-item__type">
+              <li>Médium</li>
+              <li>Numérologue</li>
+              <li>Astrologue</li>
+            </ul>
+          </div>
+        </div>
+        <div class="search-item search-item__blue">
+          <div class="search-item__photo" style="background-image: url(img/user/teresa.jpg);"></div>
+          <div class="search-item__info">
+            <div class="search-item__flag" style="background-image: url(img/flag/france.jpg);"></div>
+            <h3>Térésa</h3>
+            <ul class="search-item__type">
+              <li>Médium</li>
+              <li>Numérologue</li>
+              <li>Astrologue</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  @include('components/_question.html')
   
   <script src="js/app.min.js?v=hash"></script>
 </body>
