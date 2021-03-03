@@ -1,0 +1,42 @@
+{
+  "name": "start-gulp",
+  "version": "1.1.0",
+  "description": "Стартовый шаблон",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imslava/start-gulp.git"
+  },
+  "author": "Slava Khripushin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imslava/start-gulp/issues"
+  },
+  "homepage": "https://github.com/imslava/start-gulp#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "crypto-random-string": "^3.3.0",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify-es": "^2.0.0"
+  },
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "axios": "^0.21.1",
+    "inputmask": "^5.0.5",
+    "jquery": "^3.5.1",
+    "jquery-validation": "^1.19.2",
+    "normalize.css": "^8.0.1",
+    "slick-carousel": "^1.8.1"
+  }
+}
