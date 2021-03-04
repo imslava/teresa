@@ -65,6 +65,7 @@ function buildcopy() {
 		'app/css/app.min.css',
 		'app/js/app.min.js',
 		'app/img/**/*',
+		'app/favicon/**/*',
 		'app/fonts/**/*',
 		'app/*.html',
 		], { base: 'app' })

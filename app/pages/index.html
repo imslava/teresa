@@ -7,6 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png?v=hash">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png?v=hash">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png?v=hash">
+    <link rel="manifest" href="favicon/site.webmanifest?v=hash">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg?v=hash" color="#d47164">
+    <link rel="shortcut icon" href="favicon/favicon.ico?v=hash">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml?v=hash">
+    <meta name="theme-color" content="#ffffff">
     <title>Teresa</title>
     <link rel="stylesheet" href="css/app.min.css?v=hash">
   </head>
@@ -44,30 +53,20 @@
         </div>
       </div>
       <div class="search-result">
-        <div class="search-item search-item__orange">
-          <div class="search-item__photo" style="background-image: url(img/user/teresa.jpg);"></div>
-          <div class="search-item__info">
-            <div class="search-item__flag" style="background-image: url(img/flag/france.jpg);"></div>
-            <h3>Térésa</h3>
-            <ul class="search-item__type">
-              <li>Médium</li>
-              <li>Numérologue</li>
-              <li>Astrologue</li>
-            </ul>
-          </div>
-        </div>
-        <div class="search-item search-item__blue">
-          <div class="search-item__photo" style="background-image: url(img/user/teresa.jpg);"></div>
-          <div class="search-item__info">
-            <div class="search-item__flag" style="background-image: url(img/flag/france.jpg);"></div>
-            <h3>Térésa</h3>
-            <ul class="search-item__type">
-              <li>Médium</li>
-              <li>Numérologue</li>
-              <li>Astrologue</li>
-            </ul>
-          </div>
-        </div>
+        @loop('components/_search-item-mixin.html', [
+          {"color": "orange", "photo": "img/user/teresa.jpg", "name": "Térésa"},
+          {"color": "orange", "photo": "img/user/mike.jpg", "name": "Mike"},
+          {"color": "blue", "photo": "img/user/jessy.jpg", "name": "Jessy"},
+          {"color": "orange", "photo": "img/user/fazia.jpg", "name": "Fazia"},
+          {"color": "orange", "photo": "img/user/sandrine.jpg", "name": "Sandrine"},
+          {"color": "blue", "photo": "img/user/uther.jpg", "name": "Uther"},
+          {"color": "blue", "photo": "img/user/omer.jpg", "name": "Omer"},
+          {"color": "orange", "photo": "img/user/lucinda.jpg", "name": "Lucinda"},
+          {"color": "orange", "photo": "img/user/yvette.jpg", "name": "Yvette"},
+          {"color": "blue", "photo": "img/user/haamiah.jpg", "name": "Haamiah"},
+          {"color": "blue", "photo": "img/user/marc.jpg", "name": "Marc"},
+          {"color": "orange", "photo": "img/user/louna.jpg", "name": "Louna"},
+        ])
       </div>
     </div>
   </section>
