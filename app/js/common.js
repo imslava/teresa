@@ -1,28 +1,8 @@
 $(document).ready(function(){
 
-	$(".masked").inputmask({
-		mask: '+7 (999) 999-99-99',
-		showMaskOnHover: false
+	$('.question-item').on('click', function(){
+		$('> .question-item__text', this).slideToggle(300);
+		$(this).toggleClass('active');
 	});
-
-	$('.js-validate').validate({
-		rules: {
-			name: {required: true},
-			phone: {required: true}
-		}
-	});
-
-	function scroll() {
-		$(".js-scroll").on("click", function (event) {
-			event.preventDefault();
-			var id  = $(this).attr('href'),
-			top = $(id).offset().top - 30;
-			$('html, body').animate({
-				scrollTop: top
-			}, 1500);
-		});
-	}
-
-	scroll();
 
 });
