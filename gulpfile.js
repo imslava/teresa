@@ -14,7 +14,7 @@ const cryptoRandomString = require('crypto-random-string');
 const replace = require('gulp-replace');
 const fileinclude = require('gulp-file-include');
 
-let randomVersion = cryptoRandomString({length: 8});
+let randomVersion = cryptoRandomString({length: 12});
 
 // функции
 function browsersync() {
