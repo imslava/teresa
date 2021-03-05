@@ -1,0 +1,42 @@
+.footer
+  background-color: #fffaf6
+  padding: 22px 0 34px
+  &-top
+    @include flexbox
+    align-items: flex-start
+    padding-bottom: 26px
+    border-bottom: 1px solid #F8ECE3
+    &__menu
+      margin: 5px 119px 0 auto
+      @include flexbox
+      align-items: flex-start
+      li
+        margin-left: 60px
+        line-height: 1.5
+        &:first-child
+          margin-left: 0
+        a
+          color: #000
+          border-bottom: 1px solid #fffaf6
+          transition: .3s
+          &:hover
+            color: $color-orange
+            border-bottom: 1px solid $color-orange
+  &-bottom
+    padding-top: 33px
+    p
+      line-height: 1.5
+    &__menu
+      @include flexbox
+      align-items: flex-start
+      li
+        margin-left: 35px
+        line-height: 1.5
+        &:first-child
+          margin-left: 0
+        a
+          color: $color-orange
+          border-bottom: 1px solid #fffaf6
+          transition: .3s
+          &:hover
+            border-bottom: 1px solid $color-orange

@@ -20,58 +20,61 @@
     <link rel="stylesheet" href="css/app.min.css?v=hash">
   </head>
 <body>
-  
+
   <div class="full-bg" style="background-image: url(img/full-bg.jpg);"></div>
 
   @include('components/_nav-fixed.html')
 
   <section class="search">
-    <div class="container-10">
-      <div class="search-title">
-        <h1>Voyance en direct</h1>
-        <h2>sans attente & sans cb</h2>
-      </div>
-      <div class="search-block">
-        <ul class="search-block__nav">
-          <li class="active"><a href="#">Actuellement en audiotel</a></li>
-          <span></span>
-          <li><a href="#">Actuellement en privé</a></li>
-          <span></span>
-          <li><a href="#">Les nouveaux voyants</a></li>
-          <span></span>
-          <li><a href="#">Tous nos voyants</a></li>
-        </ul>
-        <div class="search-block__form">
-          <input type="text" class="search-block__input" placeholder="Recherchez un voyant par ses compétences et trouvez son numéro d'appel (remplissez un ou plusieurs champs)" />
-          <button type="submit" class="search-block__btn"></button>
+    <div class="container">
+      <div class="col-10 offset-1">
+        <div class="search-title">
+          <h1>Voyance en direct</h1>
+          <h2>sans attente & sans cb</h2>
         </div>
-        <div class="search-block__type">
-          <label class="search-block__label"><input type="checkbox" checked><span></span>Médium</label>
-          <label class="search-block__label"><input type="checkbox"><span></span>Tarologue</label>
-          <label class="search-block__label"><input type="checkbox"><span></span>Numérologue</label>
-          <label class="search-block__label"><input type="checkbox"><span></span>Astrologue</label>
+        <div class="search-block">
+          <ul class="search-block__nav">
+            <li class="active"><a href="#">Actuellement en audiotel</a></li>
+            <span></span>
+            <li><a href="#">Actuellement en privé</a></li>
+            <span></span>
+            <li><a href="#">Les nouveaux voyants</a></li>
+            <span></span>
+            <li><a href="#">Tous nos voyants</a></li>
+          </ul>
+          <div class="search-block__form">
+            <input type="text" class="search-block__input" placeholder="Recherchez un voyant par ses compétences et trouvez son numéro d'appel (remplissez un ou plusieurs champs)" />
+            <button type="submit" class="search-block__btn"></button>
+          </div>
+          <div class="search-block__type">
+            <label class="search-block__label"><input type="checkbox" checked><span></span>Médium</label>
+            <label class="search-block__label"><input type="checkbox"><span></span>Tarologue</label>
+            <label class="search-block__label"><input type="checkbox"><span></span>Numérologue</label>
+            <label class="search-block__label"><input type="checkbox"><span></span>Astrologue</label>
+          </div>
         </div>
-      </div>
-      <div class="search-result">
-        @loop('components/_search-item-mixin.html', [
-          {"color": "orange", "photo": "img/user/teresa.jpg", "name": "Térésa"},
-          {"color": "orange", "photo": "img/user/mike.jpg", "name": "Mike"},
-          {"color": "blue", "photo": "img/user/jessy.jpg", "name": "Jessy"},
-          {"color": "orange", "photo": "img/user/fazia.jpg", "name": "Fazia"},
-          {"color": "orange", "photo": "img/user/sandrine.jpg", "name": "Sandrine"},
-          {"color": "blue", "photo": "img/user/uther.jpg", "name": "Uther"},
-          {"color": "blue", "photo": "img/user/omer.jpg", "name": "Omer"},
-          {"color": "orange", "photo": "img/user/lucinda.jpg", "name": "Lucinda"},
-          {"color": "orange", "photo": "img/user/yvette.jpg", "name": "Yvette"},
-          {"color": "blue", "photo": "img/user/haamiah.jpg", "name": "Haamiah"},
-          {"color": "blue", "photo": "img/user/marc.jpg", "name": "Marc"},
-          {"color": "orange", "photo": "img/user/louna.jpg", "name": "Louna"},
-        ])
+        <div class="search-result">
+          @loop('components/_search-item-mixin.html', [
+            {"color": "orange", "photo": "img/user/teresa.jpg", "name": "Térésa"},
+            {"color": "orange", "photo": "img/user/mike.jpg", "name": "Mike"},
+            {"color": "blue", "photo": "img/user/jessy.jpg", "name": "Jessy"},
+            {"color": "orange", "photo": "img/user/fazia.jpg", "name": "Fazia"},
+            {"color": "orange", "photo": "img/user/sandrine.jpg", "name": "Sandrine"},
+            {"color": "blue", "photo": "img/user/uther.jpg", "name": "Uther"},
+            {"color": "blue", "photo": "img/user/omer.jpg", "name": "Omer"},
+            {"color": "orange", "photo": "img/user/lucinda.jpg", "name": "Lucinda"},
+            {"color": "orange", "photo": "img/user/yvette.jpg", "name": "Yvette"},
+            {"color": "blue", "photo": "img/user/haamiah.jpg", "name": "Haamiah"},
+            {"color": "blue", "photo": "img/user/marc.jpg", "name": "Marc"},
+            {"color": "orange", "photo": "img/user/louna.jpg", "name": "Louna"},
+          ])
+        </div>
       </div>
     </div>
   </section>
 
   @include('components/_question.html')
+  @include('components/_footer.html')
   
   <script src="js/app.min.js?v=hash"></script>
 </body>

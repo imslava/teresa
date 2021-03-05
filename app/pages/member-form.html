@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="language" content="Russian">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png?v=hash">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png?v=hash">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png?v=hash">
+    <link rel="manifest" href="favicon/site.webmanifest?v=hash">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg?v=hash" color="#d47164">
+    <link rel="shortcut icon" href="favicon/favicon.ico?v=hash">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml?v=hash">
+    <meta name="theme-color" content="#ffffff">
+    <title>Teresa</title>
+    <link rel="stylesheet" href="css/app.min.css?v=hash">
+  </head>
+<body>
+
+  @include('components/_nav-fixed.html')
+
+  <section class="member">
+    <div class="container">
+      <div class="col-12">
+        <h2>Vous voulez postuler pour devenir consultant chez nous</h2>
+        <div class="member-block">
+          <div class="member-photo" style="background-image: url(img/member-bg.jpg);"></div>
+          <div class="member-form">
+            <h3>Veuillez remplir le formulaire ci-dessous à la validation votre demande sera envoyée à notre service recrutement</h3>
+            <form action="">
+              <input type="text" class="member-input" placeholder="Votre nom" />
+              <input type="text" class="member-input" placeholder="Votre prénom" />
+              <input type="text" class="member-input" placeholder="Votre courriel" />
+              <input type="text" class="member-input" placeholder="Votre numéro de téléphone" />
+              <textarea class="member-textarea" placeholder="Commentaires"></textarea>
+              <div class="member-captcha">
+                <div class="member-captcha__code">
+                  <div class="member-captcha__return"></div>
+                </div>
+                <input type="text" class="member-captcha__input" />
+              </div>
+              <button type="submit" class="member-btn">Envoyer ma demande</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="question">
+    <div class="container">
+      <div class="col-10">
+        <h2>Questions fréquentes</h2>
+        <div class="question-item">
+          <div class="question-item__title">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium?</div>
+          <div class="question-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        </div>
+        <div class="question-item">
+          <div class="question-item__title">Excepteur sint occaecat cupidatat non proident?</div>
+          <div class="question-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        </div>
+        <div class="question-item">
+          <div class="question-item__title">Culpa qui officia deserunt mollit anim id est laborum?</div>
+          <div class="question-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        </div>
+        <div class="question-item">
+          <div class="question-item__title">Nor again is there anyone who loves?</div>
+          <div class="question-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        </div>
+        <div class="question-item">
+          <div class="question-item__title">To take a trivial example?</div>
+          <div class="question-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  @include('components/_footer.html')
+  
+  <script src="js/app.min.js?v=hash"></script>
+</body>
+</html>
