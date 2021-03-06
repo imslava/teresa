@@ -1,0 +1,224 @@
+.profile
+  padding-top: 58px
+  &-top
+    @include flexbox
+    align-items: flex-start
+    position: relative
+    margin-bottom: 50px
+    h2
+      font-size: 60px
+      line-height: 1
+      font-family: 'Prata'
+      font-weight: normal
+      text-transform: uppercase
+      margin-top: 40px
+    span
+      font-size: 20px
+      text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25)
+      color: #fff
+      padding: 10px 20px
+      background: #BAD391
+      border-radius: 20px 20px 20px 0px
+      text-transform: none
+      font-family: 'Prata'
+      line-height: 1
+    &__flag
+      position: absolute
+      top: 8px
+      right: 0
+      border-radius: 0px 5px
+      width: 30px
+      height: 24px
+      background-color: #eee
+      background-position: center center
+      background-size: cover
+      background-repeat: no-repeat
+    &__type
+      @include flexbox
+      align-items: center
+      margin: 49px 0 0 auto
+      li
+        font-size: 14px
+        padding: 10px 30px
+        line-height: 1.5
+        border-radius: 25px
+        margin-right: 10px
+        margin-top: 5px
+        transition: .3s
+        cursor: pointer
+        background-color: #fff4eb
+        color: $color-orange
+        &:hover
+          background-color: $color-orange
+          color: #fff
+        &:last-child
+          margin-right: 0
+  &-content
+    @include flexbox
+    align-items: flex-start
+  &-photo
+    width: 31.413%
+    height: 659px
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+    border-radius: 30px
+  &-text
+    // width: 37.176%
+    width: calc(100% - 31.413% - 317px - 119px)
+    margin-left: auto
+    padding-top: 30px
+    @include flexbox
+    align-items: flex-start
+    p
+      font-size: 24px
+      line-height: 1.5
+      max-width: 77%
+      width: 100%
+      margin-top: 20px
+      &:first-child
+        margin-top: 0
+    &__btn
+      padding: 20px 60px
+      color: #fff
+      border-radius: 60px
+      background-color: $color-dark-grey
+      font-size: 18px
+      font-weight: 600
+      transition: .3s
+      display: block
+      margin-top: 50px
+      &:hover
+        background-color: $color-orange
+  &-contact
+    @include flexbox
+    align-items: flex-start
+    width: 100%
+    &__item
+      width: calc(100% / 2 - 20px)
+      margin-top: 50px
+      &:first-child
+        margin-right: auto
+      h3
+        font-family: 'Prata'
+        font-weight: normal
+        font-size: 18px
+        line-height: 1
+        margin-bottom: 16px
+    &__phone
+      position: relative
+      padding-left: 60px
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        top: 1px
+        width: 50px
+        height: 50px
+        border-radius: 100%
+        background-repeat: no-repeat
+        background-position: center center
+        background-color: #fff4eb
+        background-image: url(../img/svg/phone-orange.svg)
+      a
+        color: #000
+        font-family: 'Bebas Neue'
+        font-size: 25px
+        line-height: 1.5
+      span
+        line-height: 1.5
+        font-size: 16px
+        margin-top: -9px
+        font-weight: 600
+        display: block
+        color: $color-orange
+  &-info
+    width: 317px
+    border: 1px solid #E7F1FF
+    background: #FAFCFF
+    border-radius: 30px
+    padding: 0 30px
+    text-align: center
+    &__code
+      line-height: 1
+      font-size: 30px
+      font-family: 'Prata'
+      padding: 60px 0 40px
+      h3, h4
+        font-weight: normal
+      h3
+        letter-spacing: 0.1em
+      h4
+        color: $color-orange
+    &__call
+      padding: 50px 10px 44px
+      @include flexbox
+      align-items: flex-start
+      justify-content: space-between
+      &-item
+        width: 100px
+        i
+          height: 25px
+          display: block
+          margin-bottom: 18px
+        img
+          margin: 0 auto
+        p
+          text-align: center
+          font-size: 14px
+          line-height: 1.5
+    &__comments
+      padding: 41px 0 46px
+      text-align: center
+      &-rating
+        @include flexbox
+        align-items: center
+        justify-content: center
+        margin-bottom: 9px
+        li
+          display: block
+          width: 27px
+          height: 26px
+          background: url(../img/svg/star.svg) no-repeat center center
+          margin-right: -12px
+          position: relative
+          z-index: 1
+          &:last-child
+            margin-right: 0
+          &.active
+            background: url(../img/svg/star-active.svg) no-repeat center center
+          &:nth-child(1)
+            z-index: 5
+          &:nth-child(2)
+            z-index: 4
+          &:nth-child(3)
+            z-index: 3
+          &:nth-child(4)
+            z-index: 2
+      a
+        color: $color-blue
+        font-size: 18px
+        line-height: 1.5
+        border-bottom: 1px dotted $color-blue
+      p
+        color: #a4aec2
+        font-size: 14px
+        line-height: 1.5
+        margin-top: 20px
+    &__line
+      height: 1px
+      background-color: #f1f1f1
+      position: relative
+      border-radius: 2px
+      &:before, &:after
+        content: ''
+        position: absolute
+        width: 8px
+        height: 29px
+        background: url(../img/svg/line-round.svg) no-repeat center center
+        top: -14px
+      &:before
+        left: -32px
+      &:after
+        right: -32px
+        transform: rotate(180deg)
