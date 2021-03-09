@@ -5,6 +5,10 @@ $(document).ready(function(){
 		$(this).toggleClass('active');
 	});
 
+	$('.profile-audio').on('click', function(){
+		$(this).toggleClass('active');
+	});
+
 	$('.nav-burger').on('click', function(){
 		$('.nav-menu').slideToggle(300);
 		$(this).toggleClass('active');

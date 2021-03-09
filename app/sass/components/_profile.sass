@@ -66,6 +66,7 @@
     background-repeat: no-repeat
     background-position: center center
     border-radius: 30px
+    position: relative
   &-text
     // width: 37.176%
     width: calc(100% - 31.413% - 317px - 8.5%)
@@ -230,3 +231,112 @@
       &:after
         right: -32px
         transform: rotate(180deg)
+  &-audio
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 30px
+    margin: 0 auto
+    width: 80px
+    height: 80px
+    border-radius: 40px
+    background: #F9F9F9
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25), inset 0px 0px 13px 13px #fff
+    transition: .3s
+    cursor: pointer
+    @include flexbox
+    align-items: center
+    &:before, &:after
+      content: ''
+      position: absolute
+      top: 0
+      left: 30px
+      bottom: 0
+      width: 19px
+      border-radius: 40px
+      background-repeat: no-repeat
+      background-position: center center
+      transition: .3s
+    &:before
+      background-image: url(../img/svg/sound-orange.svg)
+    &:after
+      background-image: url(../img/svg/sound-white.svg)
+      opacity: 0
+    &:hover:not(.active)
+      background: #d47164
+      box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25), inset 0px 0px 13px 13px #E78477
+      &:before
+        opacity: 0
+      &:after
+        opacity: 1
+    &.active
+      width: 200px
+      .sound-wave
+        @include flexbox
+        margin-left: 80px
+      &:before
+        background-image: url(../img/svg/sound-pause.svg)
+        left: 34px
+
+.sound-wave
+  display: none
+
+.sound-bar
+  width: 2px
+  height: 2px
+  background-color: #D47164
+  margin-right: 5px
+  transform: scaleY(1)
+  animation-duration: .5s
+  animation-iteration-count: infinite
+  animation-direction: alternate
+  animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1)
+  &:nth-child(4n)
+    animation-name: bar-scale-xl
+    animation-duration: .8 + .2s
+  &:nth-child(4)
+    animation-duration: .8 + .35s
+  &:nth-child(3)
+    animation-name: bar-scale-lg
+    animation-duration: .8 + 0s
+  &:nth-child(6)
+    animation-name: bar-scale-md
+    animation-duration: .8 + .05s
+  &:nth-child(2),
+  &:nth-child(5),
+  &:nth-child(7),
+  &:nth-child(9)
+    animation-name: bar-scale-sm
+    animation-duration: .9s
+
+@keyframes bar-scale-sm
+  0%, 50%
+    transform: scaleY(1)
+  25%
+    transform: scaleY(6)
+  75%
+    transform: scaleY(4)
+
+@keyframes bar-scale-md
+  0%, 50%
+    transform: scaleY(2)
+  25%
+    transform: scaleY(6)
+  75%
+    transform: scaleY(5)
+
+@keyframes bar-scale-lg
+  0%, 50%
+    transform: scaleY(8)
+  25%
+    transform: scaleY(4)
+  75%
+    transform: scaleY(6)
+
+@keyframes bar-scale-xl
+  0%, 50%
+    transform: scaleY(1)
+  25%
+    transform: scaleY(7)
+  75%
+    transform: scaleY(11)
