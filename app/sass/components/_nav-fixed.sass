@@ -38,3 +38,32 @@
         background-color: $color-orange
         color: #fff
         font-weight: 500
+  &-burger
+    width: 50px
+    height: 50px
+    cursor: pointer
+    position: absolute
+    top: 30px
+    left: 40px
+    display: none
+    &:before, &:after
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background-position: center center
+      background-repeat: no-repeat
+      transition: .3s
+    &:before
+      background-image: url(../img/svg/burger.svg)
+    &:after
+      background-image: url(../img/svg/close.svg)
+      background-size: 16px
+      opacity: 0
+    &.active
+      &:before
+        opacity: 0
+      &:after
+        opacity: 1
