@@ -29,19 +29,46 @@
         <div class="profile-top">
           <h2>Teresa</h2>
           <span>connecté</span>
-          <ul class="profile-top__type">
-            <li>Médium</li>
-            <li>Numérologue</li>
-            <li>Astrologue</li>
-          </ul>
+          <div class="profile-top__type-scroll">
+            <ul class="profile-top__type">
+              <li>Médium</li>
+              <li>Numérologue</li>
+              <li>Astrologue</li>
+            </ul>
+          </div>
           <div class="profile-top__flag" style="background-image: url(img/flag/france.jpg);"></div>
         </div>
         <div class="profile-content">
           <div class="profile-photo" style="background-image: url(img/profile-photo.jpg);"></div>
           <div class="profile-text">
-            <p>Bonjour, Médium de mère en fille.</p>
-            <p>Je me sers parfois de supports afin de mieux détailler mes réponses. Retenez bien ce que je vous dis je reçois des messages pour vous que je vous transmets. Je travaille dans le respect de vos choix et de votre libre arbitre. A bientôt</p>
-            <p>Teresa</p>
+            <div class="profile-text__block">
+              <p>Bonjour, Médium de mère en fille.</p>
+              <p>Je me sers parfois de supports afin de mieux détailler mes réponses. Retenez bien ce que je vous dis je reçois des messages pour vous que je vous transmets. Je travaille dans le respect de vos choix et de votre libre arbitre. A bientôt</p>
+              <p>Teresa</p>
+            </div>
+            <div class="profile-info">
+              <div class="profile-info__code">
+                <h3>4036</h3>
+                <h4>code</h4>
+              </div>
+              <div class="profile-info__line"></div>
+              <div class="profile-info__call">
+                <div class="profile-info__call-item">
+                  <i><img src="img/svg/call-phone.svg" alt=""></i>
+                  <p>Plus de 79 appels reçus</p>
+                </div>
+                <div class="profile-info__call-item">
+                  <i><img src="img/svg/call-smile.svg" alt=""></i>
+                  <p>Pourcentage de réponse 69%</p>
+                </div>
+              </div>
+              <div class="profile-info__line"></div>
+              <div class="profile-info__comments">
+                <ul class="profile-info__comments-rating"><li class="active"></li><li class="active"></li><li class="active"></li><li></li><li></li></ul>
+                <a href="#">7 Commentaires</a>
+                <p>Actif depuis le 13/07/2018</p>
+              </div>
+            </div>
             <a href="#" class="profile-text__btn">Je prends un rendez-vous en privé</a>
             <div class="profile-contact">
               <div class="profile-contact__item">
@@ -52,29 +79,6 @@
                 <h3>En privé sans attente</h3>
                 <div class="profile-contact__phone"><a href="tel:0891538538">0891 538 538</a><span>0.6 la minute sans CB</span></div>
               </div>
-            </div>
-          </div>
-          <div class="profile-info">
-            <div class="profile-info__code">
-              <h3>4036</h3>
-              <h4>code</h4>
-            </div>
-            <div class="profile-info__line"></div>
-            <div class="profile-info__call">
-              <div class="profile-info__call-item">
-                <i><img src="img/svg/call-phone.svg" alt=""></i>
-                <p>Plus de 79 appels reçus</p>
-              </div>
-              <div class="profile-info__call-item">
-                <i><img src="img/svg/call-smile.svg" alt=""></i>
-                <p>Pourcentage de réponse 69%</p>
-              </div>
-            </div>
-            <div class="profile-info__line"></div>
-            <div class="profile-info__comments">
-              <ul class="profile-info__comments-rating"><li class="active"></li><li class="active"></li><li class="active"></li><li></li><li></li></ul>
-              <a href="#">7 Commentaires</a>
-              <p>Actif depuis le 13/07/2018</p>
             </div>
           </div>
         </div>
@@ -94,7 +98,7 @@
             </li>
             <li>
               <div class="plan-item"><i class="audiotel"></i><i></i><i></i><i></i></div>
-              <p>Audiotel (25 min)</p>
+              <p>Audiotel <span>(25 min)</span></p>
             </li>
             <li>
               <div class="plan-item"><i></i><i></i><i></i><i></i></div>
@@ -338,32 +342,40 @@
         <div class="comments-item">
           <div class="comments-item__user">
             <div class="comments-item__user-photo"></div>
-            <ul class="comments-item__user-rating"><li class="active"></li><li class="active"></li><li class="active"></li><li></li><li></li></ul>
-            <p>Sam. 02/02 Par lina</p>
+            <span>
+              <ul class="comments-item__user-rating"><li class="active"></li><li class="active"></li><li class="active"></li><li></li><li></li></ul>
+              <p>Sam. 02/02 Par lina</p>
+            </span>
           </div>
           <div class="comments-item__text">Beaucoup m'avaient dit des nouvelles, un contact, un retour, une reprise.....depuis des mois, je doutais fortement, et vous avez été la seule à me dire : pas de retour, ni de nouvelles, ni visuel. Je reconnais que vous avez toujours été très forte et vous aviez raison!</div>
         </div>
         <div class="comments-item">
           <div class="comments-item__user">
             <div class="comments-item__user-photo"></div>
-            <ul class="comments-item__user-rating"><li class="active"></li><li class="active"></li><li class="active"></li><li></li><li></li></ul>
-            <p>Sam. 02/02 Par lina</p>
+            <span>
+              <ul class="comments-item__user-rating"><li class="active"></li><li class="active"></li><li class="active"></li><li></li><li></li></ul>
+              <p>Sam. 02/02 Par lina</p>
+            </span>
           </div>
           <div class="comments-item__text">Beaucoup m'avaient dit des nouvelles, un contact, un retour, une reprise.....depuis des mois, je doutais fortement, et vous avez été la seule à me dire : pas de retour, ni de nouvelles, ni visuel. Je reconnais que vous avez toujours été très forte et vous aviez raison!</div>
         </div>
         <div class="comments-item">
           <div class="comments-item__user">
             <div class="comments-item__user-photo"></div>
-            <ul class="comments-item__user-rating"><li class="active"></li><li class="active"></li><li class="active"></li><li></li><li></li></ul>
-            <p>Sam. 02/02 Par lina</p>
+            <span>
+              <ul class="comments-item__user-rating"><li class="active"></li><li class="active"></li><li class="active"></li><li></li><li></li></ul>
+              <p>Sam. 02/02 Par lina</p>
+            </span>
           </div>
           <div class="comments-item__text">Beaucoup m'avaient dit des nouvelles, un contact, un retour, une reprise.....depuis des mois, je doutais fortement, et vous avez été la seule à me dire : pas de retour, ni de nouvelles, ni visuel. Je reconnais que vous avez toujours été très forte et vous aviez raison!</div>
         </div>
         <div class="comments-item">
           <div class="comments-item__user">
             <div class="comments-item__user-photo"></div>
-            <ul class="comments-item__user-rating"><li class="active"></li><li class="active"></li><li class="active"></li><li></li><li></li></ul>
-            <p>Sam. 02/02 Par lina</p>
+            <span>
+              <ul class="comments-item__user-rating"><li class="active"></li><li class="active"></li><li class="active"></li><li></li><li></li></ul>
+              <p>Sam. 02/02 Par lina</p>
+            </span>
           </div>
           <div class="comments-item__text">Beaucoup m'avaient dit des nouvelles, un contact, un retour, une reprise.....depuis des mois, je doutais fortement, et vous avez été la seule à me dire : pas de retour, ni de nouvelles, ni visuel. Je reconnais que vous avez toujours été très forte et vous aviez raison!</div>
         </div>

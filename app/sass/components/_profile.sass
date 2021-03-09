@@ -36,7 +36,7 @@
     &__type
       @include flexbox
       align-items: center
-      margin: 49px 0 0 auto
+      margin: 49px 0 0
       li
         font-size: 14px
         padding: 10px 30px
@@ -53,9 +53,12 @@
           color: #fff
         &:last-child
           margin-right: 0
+      &-scroll
+        margin-left: auto
   &-content
     @include flexbox
     align-items: flex-start
+    position: relative
   &-photo
     width: 31.413%
     height: 659px
@@ -65,19 +68,22 @@
     border-radius: 30px
   &-text
     // width: 37.176%
-    width: calc(100% - 31.413% - 317px - 119px)
+    width: calc(100% - 31.413% - 317px - 8.5%)
     margin-left: auto
+    margin-right: 317px
     padding-top: 30px
     @include flexbox
     align-items: flex-start
-    p
-      font-size: 24px
-      line-height: 1.5
+    &__block
       max-width: 77%
       width: 100%
-      margin-top: 20px
-      &:first-child
-        margin-top: 0
+      font-size: 24px
+      line-height: 1.5
+      min-height: 420px
+      p
+        margin-top: 20px
+        &:first-child
+          margin-top: 0
     &__btn
       padding: 20px 60px
       color: #fff
@@ -87,7 +93,6 @@
       font-weight: 600
       transition: .3s
       display: block
-      margin-top: 50px
       &:hover
         background-color: $color-orange
   &-contact
@@ -139,6 +144,9 @@
     border-radius: 30px
     padding: 0 30px
     text-align: center
+    position: absolute
+    top: 0
+    right: 0
     &__code
       line-height: 1
       font-size: 30px

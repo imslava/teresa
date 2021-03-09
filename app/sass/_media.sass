@@ -1,21 +1,595 @@
-@include media(xl) // 1200
-  .container
-    max-width: 1024px
+// @include media(xl) // 1200
+//   .container
+//     max-width: 1024px
 
-@include media(lg) // 1024
-  .container
-    max-width: 768px
+// @include media(lg) // 1024
+//   .container
+//     max-width: 768px
 
-@include media(md) // 768
-  .container
-    max-width: 576px
+// @include media(md) // 768
+//   .container
+//     max-width: 576px
 
-@include media(sm) // 576
-  .container
-    max-width: 475px
+// @include media(sm) // 576
+//   .container
+//     max-width: 475px
 
-@include media(xs) //475
-  .container
-    max-width: 100%
+// @include media(xs) //475
+//   .container
+//     max-width: 100%
 
 // @include media(xxs) // 375
+
+@media(max-width: 1800px)
+  .col-10
+    width: 100%
+  .offset-1
+    margin-left: 0
+  .footer-top__menu
+    margin-right: 0
+
+  .profile-text
+    width: calc(100% - 31.413% - 317px - 40px)
+
+@media(max-width: 1700px)
+  .profile-text
+    margin-right: 0
+    margin-left: 40px
+    width: calc(100% - 31.413% - 250px - 40px)
+
+@media(max-width: 1680px)
+  .plan-top
+    justify-content: center
+  .plan-labels
+    width: 100%
+    justify-content: center
+    margin-top: 30px
+  
+  .plan-profile .plan-labels
+    width: auto
+
+@media(max-width: 1600px)
+  .footer-top__menu li
+    margin-left: 40px
+
+  .profile-info
+    width: 235px
+    padding: 0 20px
+  .profile-info__code
+    @include flexbox
+    align-items: center
+    justify-content: center
+    padding: 45px 0
+  .profile-info__line:before
+    left: -22px
+  .profile-info__line:after
+    right: -22px
+  
+  .profile-info__call-item
+    width: 130px
+    @include flexbox
+    align-items: center
+    margin: 0 auto
+    &:first-child
+      margin-bottom: 8px
+  .profile-info__call-item p
+    width: calc(100% - 22px)
+    padding-left: 10px
+    text-align: left
+    line-height: 1
+  .profile-info__call-item i
+    height: auto
+    margin-bottom: 0
+  .profile-info__call
+    padding: 30px 0
+  .profile-info__comments p
+    margin-top: 10px
+  .profile-info__comments
+    padding: 15px 0
+
+  .profile-text
+    width: calc(100% - 31.413% - 150px - 40px)
+
+@media(max-width: 1540px)
+  .container
+    margin-left: 280px
+    width: calc(100% - 280px)
+  .full-bg
+    min-height: 800px
+
+  .nav
+    width: 260px
+
+@media(max-width: 1400px)
+  .search-item__btn
+    width: 114px
+    height: 41px
+  .search-item__phone
+    padding-left: 50px
+    &:before
+      width: 40px
+      height: 40px
+      background-size: 18px
+      top: 4px
+    p
+      font-size: 14px
+      margin-top: -10px
+  .search-block
+    padding: 36px 40px
+  
+  .footer-top__menu
+    width: 500px
+    li
+      margin-bottom: 10px
+    li:first-child
+      margin-left: 40px
+  .footer-top
+    padding-bottom: 17px
+
+@media(max-width: 1300px)
+  .profile-text
+    width: calc(100% - 31.413% - 40px)
+    padding-top: 0
+  .profile-text__block
+    max-width: 51%
+    font-size: 20px
+
+@media(max-width: 1200px)
+  .container
+    margin-left: 0
+    width: 100%
+  .full-bg
+    min-height: 0
+    height: 900px
+    top: 110px
+
+  .nav
+    position: absolute
+    width: 100%
+    left: 0
+    right: 0
+    top: 0
+    border: 0
+    border-radius: 0
+    height: 110px
+    &-logo
+      margin: 25px auto
+      img
+        height: 60px
+    &:before, &:after
+      content: ''
+      position: absolute
+      width: 20px
+      height: 20px
+      bottom: -20px
+      background: url(../img/svg/nav-round.svg) no-repeat
+    &:after
+      right: 0
+      transform: rotate(90deg)
+  .nav-menu
+    display: none
+  
+  .footer
+    &:before, &:after
+      content: ''
+      position: absolute
+      width: 20px
+      height: 20px
+      top: -20px
+      background: url(../img/svg/nav-round.svg) no-repeat
+      transform: rotate(-90deg)
+    &:after
+      right: 0
+      transform: rotate(180deg)
+
+  .search-block__nav
+    li
+      width: 120px
+      text-align: center
+  .search-block__form
+    margin-bottom: 10px
+  .search-block__input
+    @include placeholder
+      color: #fff
+  .search-block__label
+    margin-right: 0
+  .search-block__type
+    justify-content: space-between
+  
+  .search-title h1,
+  .search-title h2
+    font-size: 70px
+  .search-title h2
+    margin-top: 20px
+  .search-title
+    max-width: 410px
+    margin: 0 65px 305px auto
+  .search-block__small
+    display: block
+  .search
+    padding-top: 210px
+
+  .question
+    margin: 100px 0 150px
+  .question-item__text
+    padding-left: 0
+    padding-bottom: 22px
+  .question-item__title
+    padding-left: 70px
+
+  .member
+    padding-top: 210px
+  .member h2
+    text-align: center
+  .member-photo
+    width: 100%
+    height: 500px
+    border-bottom-left-radius: 0px
+    border-top-right-radius: 30px
+    background-image: url(../img/member-bg-mob.jpg)
+  .member-form
+    width: 100%
+    padding: 60px 0 80px
+    border-top-right-radius: 0px
+    border-bottom-left-radius: 30px
+    border-top: 0
+    border-left: 1px solid #e7f1ff
+    form, h3
+      max-width: 620px
+      width: 100%
+      margin: 0 auto
+    h3
+      margin-bottom: 50px
+  
+  .plan-page
+    padding-top: 170px
+  .plan-labels li
+    margin-left: 137px
+  
+  .plan-table
+    padding: 0 40px
+    min-width: 1342px
+  .plan-table__scroll
+    width: calc(100% + 80px)
+    margin-left: -40px
+    padding-right: 0
+
+  .profile
+    padding-top: 170px
+  
+  .profile-photo
+    width: 295px
+    height: 446px
+  .profile-text
+    width: calc(100% - 400px - 30px)
+    margin-left: 30px
+  .profile-text__block
+    max-width: 100%
+    min-height: 400px
+    p
+      max-width: 345px
+  .plan-labels span
+    display: none
+  .plan-profile .plan-labels
+    width: 440px
+    justify-content: space-between
+    li
+      margin-left: 0
+
+@media(max-width: 1023px)
+  .search-item__btn
+    width: 138px
+    height: 43px
+    margin-left: 0
+    margin-top: 15px
+  .search-item__type
+    margin-bottom: 15px
+  .search-item__info
+    padding: 20px 15px
+  .search-item__phone
+    width: 100%
+
+  .profile-info
+    position: relative
+    margin: 50px 0
+    width: 100%
+  .profile-text
+    width: calc(100% - 295px - 30px)
+    &__block
+      min-height: 0
+      p
+        max-width: 100%
+    
+  .profile-top__type-scroll
+    width: calc(100% + 40px)
+    margin-left: -20px
+    margin-right: -20px
+    padding: 0 20px
+    overflow-x: scroll
+  .profile-top__type
+    margin-top: 20px
+    width: 100%
+    flex-wrap: nowrap
+
+@media(max-width: 900px)
+  .profile-contact__item
+    width: 210px
+    margin: 30px auto 0
+  .profile-text__btn
+    width: 100%
+    padding-left: 0
+    padding-right: 0
+    text-align: center
+
+@media(max-width: 800px)
+  .plan-top h4
+    width: 100%
+    text-align: center
+  .plan-profile .plan-labels
+    margin: 30px auto 0
+
+@media(max-width: 767px)
+  .container
+    padding: 0 20px
+  .search-item
+    width: calc(100% - 40px)
+    margin: 20px 20px 0
+  .search-block
+    margin-left: -20px
+    width: calc(100% + 40px)
+    padding: 36px 20px
+  
+  .full-bg
+    height: 570px
+    top: 0
+    background-image: url(../img/full-bg-mob.jpg)
+  
+  .nav-logo img
+    height: 40px
+  .nav-logo
+    margin: 35px auto 15px
+  .nav
+    height: 90px
+
+  .search
+    padding-top: 410px
+  .search-title
+    max-width: 205px
+    margin: 0 auto 20px
+    text-align: center
+    h1, h2
+      font-size: 30px
+    h2
+      margin-top: 10px
+
+  .question-item__title
+    font-size: 18px
+  .question h2
+    font-size: 30px
+    text-align: center
+  .question-item__text
+    padding-left: 5px
+    padding-right: 10px
+  
+  .footer
+    padding: 30px 0 35px
+    text-align: center
+  .footer-top
+    padding-bottom: 30px
+  .footer-logo
+    width: 100%
+    @include flexbox
+    justify-content: center
+    padding-bottom: 20px
+    img
+      height: 40px
+      margin: 0 auto
+      display: block
+  .footer-top__menu
+    width: 100%
+    li
+      width: 100%
+      margin: 15px auto 0
+      &:first-child
+        margin-left: 0
+        margin-top: 0
+  .footer-bottom
+    padding-top: 30px
+  .footer-bottom__menu
+    width: 100%
+    li
+      width: 100%
+      margin: 15px auto 0
+  .search-block__nav
+    margin-left: -20px
+    width: calc(100% + 40px)
+    justify-content: center
+    flex-wrap: nowrap
+  .search-block__nav li
+    width: 153px
+    text-align: left
+    padding: 0 20px
+
+  .member h2
+    font-size: 30px
+    margin-bottom: 50px
+    line-height: 1.3
+  .member
+    padding-top: 140px
+  .member-photo
+    height: 400px
+  .member-form
+    padding: 30px 25px 60px
+    h3
+      font-size: 20px
+      margin-bottom: 30px
+  
+  .plan-table
+    padding: 0 20px
+    min-width: 1302px
+  .plan-table__scroll
+    width: calc(100% + 40px)
+    margin-left: -20px
+  .plan-labels
+    justify-content: space-between
+    li
+      margin-left: 0
+  
+  .plan-page
+    padding-top: 130px
+  .plan-top
+    h2
+      font-size: 30px
+      margin-right: 6px
+    h3
+      font-size: 20px
+  .plan-page .plan-top
+    margin-bottom: 30px
+
+  .profile
+    padding-top: 130px
+    &-top
+      justify-content: center
+      margin-bottom: 40px
+      h2
+        font-size: 30px
+        margin-top: 11px
+        margin-right: 10px
+      span
+        font-size: 15px
+  .profile-top__type
+    margin-top: 15px
+    // justify-content: center
+  .profile-top__flag
+    right: -10px
+    top: -30px
+
+  .comments-top
+    padding: 40px 20px 45px
+    text-align: center
+    @include flexbox
+    justify-content: center
+    p
+      width: 100%
+      margin-bottom: 20px
+  .comments-item__user
+    width: 100%
+    @include flexbox
+    justify-content: center
+    align-items: center
+    order: -1 !important
+  .comments-item__user-photo
+    margin: 0
+    margin-right: 20px
+  .comments-item__user-rating
+    justify-content: flex-start
+    margin-bottom: 2px
+  
+  .comments-item__text
+    width: 100%
+    padding: 20px 25px
+    margin-top: 30px
+    &:before
+      left: 0 !important
+      right: 0 !important
+      margin: 0 auto
+      top: -29px
+      transform: rotate(90deg) !important
+  
+  .comments
+    margin-top: 100px
+
+@media(max-width: 680px)
+  .profile-photo
+    height: 700px
+    width: 100%
+  .profile-text
+    width: 100%
+    margin-left: 0
+    margin-top: 50px
+  
+  .profile-info__code
+    padding: 25px 0
+  .profile-info__call
+    padding: 12px 0
+  .profile-info__comments
+    padding: 12px 0
+    @include flexbox
+    justify-content: center
+    align-items: center
+    p
+      width: 100%
+    .profile-info__comments-rating
+      margin-bottom: 0
+      margin-right: 10px
+
+@media(max-width: 640px)
+  .search-block__type
+    width: 280px
+    margin: 0 auto
+  .search-block__label
+    min-width: 110px
+    margin-top: 15px
+    &:nth-child(1), &:nth-child(2)
+      margin-top: 0
+  .search-block__nav
+    width: 625px
+    flex-wrap: wrap
+    margin-left: 0
+  .search-block
+    padding-top: 25px
+  .search-block__nav-scroll
+    width: calc(100% + 40px)
+    margin-left: -20px
+    overflow-x: scroll
+    height: 65px
+    padding-top: 10px
+    // &::-webkit-scrollbar-track
+    //   background-color: #fff
+    // &::-webkit-scrollbar
+    //   height: 7px
+    //   background-color: #F5F5F5
+    // &::-webkit-scrollbar-thumb
+    //   border-radius: 10px
+    //   background-color: rgba(0,0,0,.3)
+  .member-btn
+    margin: 0 auto
+    display: block
+    max-width: 288px
+    padding-left: 0
+    padding-right: 0
+    text-align: center
+    width: 100%
+  .member-captcha__code,
+  .member-captcha__input
+    width: 215px
+    margin: 0 auto
+  .member-captcha__input
+    margin-top: 10px
+  .member-captcha
+    margin: 0 auto 30px
+    width: 215px
+    justify-content: center
+  .member-textarea
+    margin-bottom: 30px
+
+  .plan-labels
+    flex-wrap: nowrap
+  .plan-labels li
+    // width: calc(100% / 3)
+    justify-content: center
+  .plan-labels li p
+    margin-left: 0
+    width: 100%
+    margin-top: 5px
+    text-align: center
+
+@media(max-width: 500px)
+  .profile-info__call-item
+    width: 210px
+  .profile-photo
+    height: 450px
+
+@media(max-width: 425px)
+  .profile-photo
+    height: 350px

@@ -21,7 +21,7 @@
   </head>
 <body>
 
-  <div class="full-bg" style="background-image: url(img/full-bg.jpg);"></div>
+  <div class="full-bg"></div>
 
   @include('components/_nav-fixed.html')
 
@@ -33,19 +33,22 @@
           <h2>sans attente & sans cb</h2>
         </div>
         <div class="search-block">
-          <ul class="search-block__nav">
-            <li class="active"><a href="#">Actuellement en audiotel</a></li>
-            <span></span>
-            <li><a href="#">Actuellement en privé</a></li>
-            <span></span>
-            <li><a href="#">Les nouveaux voyants</a></li>
-            <span></span>
-            <li><a href="#">Tous nos voyants</a></li>
-          </ul>
+          <div class="search-block__nav-scroll">
+            <ul class="search-block__nav">
+              <li class="active"><a href="#">Actuellement en audiotel</a></li>
+              <span></span>
+              <li><a href="#">Actuellement en privé</a></li>
+              <span></span>
+              <li><a href="#">Les nouveaux voyants</a></li>
+              <span></span>
+              <li><a href="#">Tous nos voyants</a></li>
+            </ul>
+          </div>
           <div class="search-block__form">
             <input type="text" class="search-block__input" placeholder="Recherchez un voyant par ses compétences et trouvez son numéro d'appel (remplissez un ou plusieurs champs)" />
             <button type="submit" class="search-block__btn"></button>
           </div>
+          <div class="search-block__small">Recherchez un voyant par ses compétences et trouvez son numéro d'appel (remplissez un ou plusieurs champs)</div>
           <div class="search-block__type">
             <label class="search-block__label"><input type="checkbox" checked><span></span>Médium</label>
             <label class="search-block__label"><input type="checkbox"><span></span>Tarologue</label>

@@ -14,7 +14,7 @@ body
   font-size: 18px
   font-family: 'Mada', sans-serif
   color: $color-black
-  min-width: 320px
+  min-width: 375px
   position: relative
 
 img
@@ -51,9 +51,9 @@ ul
 .container
   position: relative
   z-index: 5
-  padding: 0 20px
+  padding: 0 40px
   margin-left: 416px
-  width: calc(100% - 416px - 62px)
+  width: calc(100% - 416px - 62px + 40px)
 
 .col-12
   position: relative
@@ -71,7 +71,9 @@ ul
   top: 0
   left: 0
   right: 0
-  height: 1010px
+  height: 100vh
+  min-height: 1010px
   background-repeat: no-repeat
   background-position: top center
   background-size: cover
+  background-image: url(../img/full-bg.jpg)
