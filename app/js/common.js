@@ -15,6 +15,14 @@ $(document).ready(function(){
 
 	$("head").append('<style type="text/css">.compensate-for-scrollbar, .compensate-for-scrollbar-menu{overflow: hidden; margin-right:' + (window.innerWidth - document.documentElement.clientWidth) + "px;}</style>");
 
+	if($(window).width() > 1024){
+		$('.history-content').colcade({
+			columns: '.history-col',
+			items: '.history-item'
+		});
+	}
+	
+
 });
 
 function checkOffset() {
