@@ -38,15 +38,25 @@
     width: calc(100% - 31.413% - 250px - 40px)
 
 @media(max-width: 1680px)
-  .plan-top
-    justify-content: center
-  .plan-labels
-    width: 100%
-    justify-content: center
-    margin-top: 30px
+  // .plan-top
+  //   justify-content: center
+  // .plan-labels
+  //   width: 100%
+  //   justify-content: center
+  //   margin-top: 30px
   
-  .plan-profile .plan-labels
-    width: auto
+  // .plan-profile .plan-labels
+  //   width: auto
+
+  .plan-top
+    h2
+      font-size: 50px
+      margin-right: 5px
+    h3
+      font-size: 40px
+  
+  .plan-labels li
+    margin-left: 50px
 
 @media(max-width: 1600px)
   .footer-top__menu li
@@ -125,6 +135,9 @@
       margin-left: 40px
   .footer-top
     padding-bottom: 17px
+  
+  .plan-labels span
+    display: none
 
 @media(max-width: 1300px)
   .profile-text
@@ -133,6 +146,11 @@
   .profile-text__block
     max-width: 51%
     font-size: 20px
+  
+  .plan-labels li
+    margin-left: 30px
+    p
+      font-size: 16px
 
 @media(max-width: 1200px)
   .container
@@ -253,8 +271,16 @@
   
   .plan-page
     padding-top: 170px
+  .plan-labels
+    justify-content: center
+    width: 100%
+    margin-top: 30px
+  .plan-page .plan-top
+    justify-content: center
   .plan-labels li
     margin-left: 137px
+    p
+      font-size: 18px
   
   .plan-table
     padding: 0 40px
@@ -278,8 +304,6 @@
     min-height: 400px
     p
       max-width: 345px
-  .plan-labels span
-    display: none
   .plan-profile .plan-labels
     width: 440px
     justify-content: space-between
@@ -653,3 +677,20 @@
 @media(max-width: 425px)
   .profile-photo
     height: 350px
+
+
+@media(max-width: 1760px)
+  .plan-table
+    zoom: 0.85
+
+@media(max-width: 1680px)
+  .plan-table
+    zoom: 0.82
+
+@media(max-width: 1400px)
+  .plan-table
+    zoom: 0.68
+
+@media(max-width: 1200px)
+  .plan-table
+    zoom: 1
