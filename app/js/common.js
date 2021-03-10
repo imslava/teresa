@@ -1,3 +1,7 @@
+/*!
+ * common.js
+ */
+
 $(document).ready(function(){
 
 	$('.question-item').on('click', function(){
@@ -17,15 +21,24 @@ $(document).ready(function(){
 		$(".nav-menu ul").toggleClass("compensate-for-scrollbar-menu");
 	});
 
-	$("head").append('<style type="text/css">.compensate-for-scrollbar, .compensate-for-scrollbar-menu{overflow: hidden; margin-right:' + (window.innerWidth - document.documentElement.clientWidth) + "px;}</style>");
+	$("head").append('<style type="text/css">.compensate-for-scrollbar, .compensate-for-scrollbar-menu{overflow: hidden; margin-right:' + (window.innerWidth - document.documentElement.clientWidth) + "px;}</style>");	
 
-	if($(window).width() > 1024){
-		$('.history-content').colcade({
-			columns: '.history-col',
-			items: '.history-item'
-		});
-	}
-	
+	/**
+	 * Куки
+	 */
+	$(function() {
+	  if (!$.cookie('hideModal')) {
+	    $('.cookie').fadeIn();
+	  }
+	});
+	 
+	$('.cookie-agree').click(function(){
+	  $('.cookie').fadeOut();
+	  $.cookie('hideModal', true, {
+	    expires: 30,
+	    path: '/'
+	  });
+	});
 
 });
 

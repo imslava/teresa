@@ -29,11 +29,11 @@ function browsersync() {
 function scripts() {
 	return src([
 		'node_modules/jquery/dist/jquery.min.js',
-		'node_modules/colcade/colcade.js',
+		'app/js/vendor/jquery.cookie.js',
 		'app/js/common.js',
 		])
 	.pipe(concat('app.min.js'))
-	.pipe(uglify())
+	// .pipe(uglify())
 	.pipe(dest('app/js/'))
 	.pipe(browserSync.stream())
 }
@@ -44,7 +44,7 @@ function styles() {
 	.pipe(sass())
 	.pipe(concat('app.min.css'))
 	.pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true }))
-	.pipe(cleancss( { level: { 1: { specialComments: 0 } }/* , format: 'beautify' */ } ))
+	// .pipe(cleancss( { level: { 1: { specialComments: 0 } }/* , format: 'beautify' */ } ))
 	.pipe(dest('app/css/'))
 	.pipe(browserSync.stream())
 }

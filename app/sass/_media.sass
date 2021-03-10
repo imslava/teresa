@@ -326,19 +326,24 @@
     margin-top: 20px
     width: 100%
     flex-wrap: nowrap
-  
-  .history-col-tablet
-    width: 100%
+
   .history-text
     max-width: 100%
 
+  .history-content
+    @include flexbox
+    align-items: flex-start
+  
   .history-item
-    width: 50%
-  .history-item-tablet
-    width: 100%
-  .history-item-last
-    order: 1
+    width: calc(100% / 2 - 40px)
+  .history-full
+    width: calc(100% - 40px)
 
+  .order-2
+    order: -2
+  .order-1
+    order: -1
+    
 @media(max-width: 900px)
   .profile-contact__item
     width: 210px
@@ -359,7 +364,7 @@
 @media(max-width: 767px)
   .history-item
     width: 100%
-    padding-bottom: 50px
+    margin-bottom: 50px
   .history-text h3
     font-size: 20px
     margin-bottom: 20px

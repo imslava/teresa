@@ -21,13 +21,14 @@
   &-content
     position: relative
     margin: 0 -20px
-    @include flexbox
-    align-items: flex-start
-  &-col
-    width: 50%
+    column-count: 2
+    column-gap: 0
+    // display: inline-grid
+    // grid-template-columns: repeat(2, 1fr)
   &-item
-    padding: 0 20px
-    padding-bottom: 100px
+    break-inside: avoid-column
+    margin: 0 20px 100px
+    // width: calc(100% / 2 - 40px)
     img
       width: 100%
       max-width: 100%
