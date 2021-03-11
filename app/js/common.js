@@ -43,6 +43,7 @@ $(document).ready(function(){
 });
 
 function checkOffset() {
+
   var a=$(document).scrollTop()+window.innerHeight;
   var b=$('.footer').offset().top;
 	if($(window).width() > 1200){
@@ -51,7 +52,8 @@ function checkOffset() {
 		} else {
 			$('.nav').css({'bottom': (20+(a-b))+'px', 'top': (20-(a-b))+'px'});
 		}
-	}  
+	} 
+
 }
 $(document).ready(checkOffset);
 $(document).scroll(checkOffset);
