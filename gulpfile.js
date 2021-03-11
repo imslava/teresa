@@ -63,6 +63,7 @@ function buildcopy() {
 	return src([
 		'app/css/app.min.css',
 		'app/js/app.min.js',
+		'app/js/plan-table.js',
 		'app/img/**/*',
 		'app/favicon/**/*',
 		'app/fonts/**/*',
